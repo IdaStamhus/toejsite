@@ -6,6 +6,12 @@
   --cta-color: #fff;
 }
 
+/* h1 {
+  text-decoration: none;
+
+
+} */
+
 .site-header {
   display: flex;
   justify-content: space-between;
