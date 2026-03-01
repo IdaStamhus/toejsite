@@ -11,7 +11,7 @@ function showProducts(productsArr) {
   productListContainer.innerHTML = "";
   productsArr.forEach((product) => {
     console.log(product);
-    productListContainer.innerHTML += `<article class="smallProduct soldOut">
+    productListContainer.innerHTML += `<article class="smallProduct">
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" />
         <p class="soldoutTxt color_me_black_and_red">SOLD OUT</p>
 
