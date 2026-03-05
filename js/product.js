@@ -9,7 +9,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
     productContainer.innerHTML = `
     <figure>
         <img src="https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp" alt="Produktbillede" class="productImage" />
-        <span class="saleLabel">Udsalg!</span>
+        ${data.soldout ? "<span class='saleLabel'>Udsolgt!</span>" : ""}
       </figure>
       <section class="productDetails">
         <h2 class="productName">Produktnavn</h2>
