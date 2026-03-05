@@ -1,16 +1,15 @@
 /* ******************* INDEX ********************** */
-/* Header */
+
 :root {
   --gap: 26px;
   --cta-bg: #9b9b9b;
   --cta-color: #fff;
 }
 
-/* h1 {
+/* Header */
+h1 {
   text-decoration: none;
-
-
-} */
+}
 
 .site-header {
   display: flex;
@@ -36,9 +35,10 @@
   margin: 0 0 60px 0;
 }
 
-.cta-nav li {
-}
-.cta {
+/* .cta-nav li {
+} */
+
+.cta-grid .cta {
   display: grid;
   background: var(--cta-bg);
   color: var(--cta-color);
