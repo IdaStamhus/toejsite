@@ -1,4 +1,4 @@
-const categoryListContainer = document.querySelector(".cta-nav");
+// const categoryListContainer = document.querySelector(".cta-nav");
 // const categories = [
 //   "Accessories",
 //   "Apparel",
@@ -17,6 +17,6 @@ fetch("https://kea-alt-del.dk/t7/api/categories")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((category) => {
-      categoryListContainer.innerHTML += `<li><a class="cta" href="productlist.html?category=${category.category}">${category.category}</a></li>`;
+      document.querySelector(".cta-nav").innerHTML += `<li><a class="cta" href="productlist.html?category=${category.category}">${category.category}</a></li>`;
     });
   });
